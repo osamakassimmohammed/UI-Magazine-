@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+  
+  <title>Eva Online Shopping Store </title>
+  <link href="https://fonts.googleapis.com/css?family=Abel|Amatic+SC|Raleway:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="js/sweetalert.min.js"></script>
+<link rel="stylesheet" type="text/css" href="js/sweetalert.css">
+  
+</head>
+<body>
+
+  <div class="navigation">
+      <ul>
+    <li><a  href="index.html">Home</a></li>
+       <li  class="active" id="Clothes-nav"><a href="#">Clothes</a></li>
+        <li><a href="Shoes.html">Shoes</a></li>
+        <li><a href="Accessories.html">Accessories</a></li>
+        <li><a href="Contact.html">Contact Us</a></li>
+        <li><a href="MyAccount.html">My Account</a></li>
+        <li><a href="Cart.html">Cart</a></li>
+       <li><form style="text-align:center";>
+              <input type="text"><input type="submit" value="search">
+          </form></li>
+    </ul>
+  </div>
+    
+  <div id="Clothes-cover">
+    <div class="contant">
+      <h1 class="font-in-top-page">Eva<br/>"New Arrival Clothes "</h1>
+   
+    </div>
+  </div>
+
+  <div class="products">
+    <h3 class="New">New In </h3>
+    <div class="product">
+      <img src="img/00239205-02.jpg">
+      <p>Contemporary Leaf Wrap Dress</p>
+      <h4>$100.00</h4>
+      
+      
+      <button class="btn" onclick="added1();" type="text">Buy Now </button>
+      <script>
+		function added1(){
+		swal("The item has been added successfully !", "You bought The Leaf Wrap Dress, Item Price 100 USD", "success")
+			
+		}
+		</script>
+    </div>
+
+    <div class="product">
+      <img src="img/00231430-01.jpg">
+      <p>Distressed Denim Overalls</p>
+      <h4>$60.00</h4>
+      <button class="btn" onclick="added2();" type="text">Buy Now </button>
+      <script>
+		function added2(){
+		swal("The item has been added successfully !", "You bought The Denim Overalls, Item Price 60 USD  ", "success")
+			
+		}
+		</script>
+    </div>
+
+    <div class="product">
+      <img src="img/00089203-02.jpg">
+      <p>Active Ribbed Leggings</p>
+      <h4>$15.00</h4>
+            <button class="btn" onclick="added3();" type="text">Buy Now </button>
+      <script>
+		function added3(){
+		swal("The item has been added successfully !", "You bought The Ribbed Leggings, Item Price 15 USD  ", "success")
+			
+		}
+		</script>
+    </div>
+
+    <div class="product">
+      <img src="img/00235401-02.jpg">
+      <p>Camo Print Overall Pants</p>
+      <h4>$30.00</h4>
+           <button class="btn" onclick="added4();" type="text">Buy Now </button>
+      <script>
+		function added4(){
+		swal("The item has been added successfully !", "You bought The Overall Pants, Item Price 30 USD  ", "success")
+			
+		}
+		</script>
+    </div>
+  </div>
+
+ 
+  <h3>Nothing you like ? visit our clothes sections to see more options </h3>
+    
+    <footer style="text-align:center";>Copyright &copy; Eva Online Store </footer>
+  
+</body>
+</html> 

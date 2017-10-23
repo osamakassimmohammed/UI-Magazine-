@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+  
+  <title>Eva Online Shopping Store </title>
+  <link href="https://fonts.googleapis.com/css?family=Abel|Amatic+SC|Raleway:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="js/sweetalert.min.js"></script>
+<link rel="stylesheet" type="text/css" href="js/sweetalert.css">
+  
+</head>
+<body>
+
+  <div class="navigation">
+      <ul>
+    <li><a href="index.html">Home</a></li>
+       <li><a href="Clothes.html">Clothes</a></li>
+        <li ><a href="Shoes.html">Shoes</a></li>
+        <li ><a href="Accessories.html">Accessories</a></li>
+        <li ><a href="Contact.html">Contact Us</a></li>
+        <li ><a href="MyAccount.html">My Account</a></li>
+        <li class="active"><a href="Cart.html">Cart</a></li>
+       <li><form style="text-align:center";>
+              <input type="text"><input type="submit" value="search">
+          </form></li>
+    </ul>
+  </div>
+    
+  <div id="Clothes-cover">
+    <div class="contant">
+     
+     
+     
+      <h1 class="font-in-top-page"><br/>"  User Purchases "</h1>
+   
+    </div>
+  </div>
+
+  <div class="products" id="Cart">
+  <img src="img/Accessories1.jpg" class="cartimg"> 
+   <label >Duffle Bag</label><br><br>
+   <label >Price </label><br>
+   <label >$29.60</label>
+   <br><br><br><br>
+  
+  
+    
+  <img src="img/Shoes1.jpg" class="cartimg"> 
+   <label >Chelsea Boots</label><br><br>
+   <label >Price </label><br>
+   <label >$120</label>
+   
+   
+   
+   <br><br>
+   
+   <button class="btn" onclick="join();" type="text">Payment </button>
+      <script>
+		function join(){
+		swal({
+  title: "Enter Your Credit  Card number  ",
+  text: "Write Credit  Card number and CVV :",
+  type: "input",
+  showCancelButton: true,
+  closeOnConfirm: false,
+  animation: "slide-from-top",
+  inputPlaceholder: "Credit  Card Number - CVV"
+},
+function(inputValue){
+  if (inputValue === false) return false;
+  
+  if (inputValue === "") {
+    swal.showInputError("You need to write Your Email !");
+    return false
+  }
+  
+  swal("Nice!", "You wrote: " + inputValue, "success");
+});
+			
+		}
+		</script>
+      
+   
+  </div>
+  
+  
+
+ 
+  <h3>Nothing you like ? visit our clothes sections to see more options </h3>
+    
+    <footer style="text-align:center";>Copyright &copy; Eva Online Store </footer>
+  
+</body>
+</html> 
