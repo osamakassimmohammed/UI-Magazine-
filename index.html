@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+  
+  <title>Eva Online Shopping Store </title>
+  <link href="https://fonts.googleapis.com/css?family=Abel|Amatic+SC|Raleway:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="style.css">
+<script src="js/sweetalert.min.js"></script>
+<link rel="stylesheet" type="text/css" href="js/sweetalert.css">
+  
+</head>
+<body>
+
+  <div class="navigation">
+      <ul>
+    <li><a class="active" href="#">Home</a></li>
+       <li id="Clothes-nav"><a href="Clothes.html">Clothes</a></li>
+        <li><a href="Shoes.html">Shoes</a></li>
+        <li><a href="Accessories.html">Accessories</a></li>
+        <li><a href="Contact.html">Contact Us</a></li>
+        <li><a href="MyAccount.html">My Account</a></li>
+        <li><a href="Cart.html">Cart</a></li>
+       <li><form style="text-align:center";>
+              <input ><input type="submit" value="search">
+              
+              <script>
+		   
+		   
+		   </script>
+          </form></li>
+    </ul>
+  </div>
+    
+  <div id="cover">
+    <div class="cover-content">
+      <h1>Eva<br/>"NEW SHAPE OF YOUTH"</h1>
+      <h2>Your No.1 destination for Women Fashion in the middle east .</h2>
+      <button class="btn" onclick="join();" type="text">Join Our Newsletter </button>
+      <script>
+		function join(){
+		swal({
+  title: "Enter Your Email ",
+  text: "Write Email Address :",
+  type: "input",
+  showCancelButton: true,
+  closeOnConfirm: false,
+  animation: "slide-from-top",
+  inputPlaceholder: "Example@gmail.com"
+},
+function(inputValue){
+  if (inputValue === false) return false;
+  
+  if (inputValue === "") {
+    swal.showInputError("You need to write Your Email !");
+    return false
+  }
+  
+  swal("Nice!", "You wrote: " + inputValue, "success");
+});
+			
+		}
+		</script>
+      
+      
+    </div>
+  </div>
+
+  <div class="products">
+    <h3 class="New">New In </h3>
+    
+    
+ <div class="product">
+      <img src="img/Shoes3.jpg">
+      <p>Pom Pom Sandals</p>
+      <h4>$45.00</h4>
+            <button class="btn" onclick="Sandals();" type="text">Buy Now </button>
+      <script>
+		function Sandals(){
+		swal("The item has been added successfully !", "You bought Pom Pom Sandals, Item Price 45 USD  ", "success")
+			
+		}
+		</script>
+    </div>
+
+ <div class="product">
+      <img src="img/00089203-02.jpg">
+      <p>Active Ribbed Leggings</p>
+      <h4>$15.00</h4>
+            <button class="btn" onclick="added3();" type="text">Buy Now </button>
+      <script>
+		function added3(){
+		swal("The item has been added successfully !", "You bought The Ribbed Leggings, Item Price 15 USD  ", "success")
+			
+		}
+		</script>
+    </div>
+
+<div class="product">
+      <img src="img/Accessories1.jpg">
+      <p> Duffle Bag</p>
+      <h4>$29.60</h4>
+      
+      
+      <button class="btn" onclick="added1();" type="text">Buy Now </button>
+      <script>
+		function added1(){
+		swal("The item has been added successfully !", "You bought Duffle Bag, Item Price 29.60 USD", "success")
+			
+		}
+		</script>
+    </div>
+
+  <div class="product">
+      <img src="img/Accessories4.jpg">
+      <p>Leather Waist Belt</p>
+      <h4>$6.00</h4>
+           <button class="btn" onclick="added4();" type="text">Buy Now </button>
+      <script>
+		function added4(){
+		swal("The item has been added successfully !", "You bought Leather Waist Belt, Item Price 6 USD  ", "success")
+			
+		}
+		</script>
+    </div>
+    
+    
+    
+    
+  </div>
+
+ 
+  <h3>Nothing you like ? visit our clothes sections to see more options </h3>
+    
+    <footer style="text-align:center";>Copyright &copy; Eva Online Store </footer>
+  
+</body>
+</html> 
